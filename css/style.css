@@ -1,0 +1,115 @@
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+*{margin:0;padding:0;-ms-transition:all .1s ease-in-out;-moz-transition:all .1s ease-in-out;-o-transition:all .1s ease-in-out;-webkit-transition:all .1s ease-in-out;transition:all .1s ease-in-out}
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:600italic");
+@import url("http://fonts.googleapis.com/css?family=Josefin+Slab:700");
+body{background:#313131;color:#fff;font:italic 600 16px 'Open Sans',sans-serif}
+header{background:#232323;display:block;text-align:center;padding:1px;}
+header h1{margin:50px;background:#353535;position:relative;padding:10px;}
+header h1 a{color:#fff;text-decoration:none}
+header h1:after{content:"";position:absolute;bottom:-20px;border-left:80px solid transparent;border-top:20px solid #353535;border-right:80px solid transparent;left:50%;margin-left:-80px}
+header section.central .perfil{display:block;padding:20px;text-align:center;}
+header section.central .perfil figure .wrapperImg{border:2px dashed #fff;border-radius:50%;box-shadow:0 0 10px rgba(0,0,0,0.1);margin:0 auto;overflow:hidden;width:130px;height:130px;}
+header section.central .perfil figure .wrapperImg img{width:100%}
+header section.central .perfil blockquote{line-height:18px;padding:5px;color:#ddd;font-size:14px;}
+header section.central .perfil blockquote:before{content:open-quote;color:#ff0;font-size:25px}
+header section.central .perfil blockquote:after{content:close-quote;color:#ff0;font-size:25px}
+header section.central .habilidades{display:block;}
+header section.central .habilidades .frontend,header section.central .habilidades .backend{display:block;}
+header section.central .habilidades .frontend ul,header section.central .habilidades .backend ul{list-style:none;padding:0 20px 0 20px;}
+header section.central .habilidades .frontend ul li,header section.central .habilidades .backend ul li{display:block;}
+header section.central .habilidades .frontend ul li progress[value],header section.central .habilidades .backend ul li progress[value]{appearance:none;border:none;width:100%;height:20px;background-color:whiteSmoke;border-radius:3px;box-shadow:0 2px 3px rgba(0,0,0,0.5) inset;color:#4169e1;position:relative;margin:0 0 1.5em;overflow:hidden;}
+header section.central .habilidades .frontend ul li progress[value]::-webkit-progress-bar,header section.central .habilidades .backend ul li progress[value]::-webkit-progress-bar{background-color:whiteSmoke;border-radius:3px;box-shadow:0 2px 3px rgba(0,0,0,0.5) inset}
+header section.central .habilidades .frontend ul li progress[value]::-webkit-progress-value,header section.central .habilidades .backend ul li progress[value]::-webkit-progress-value{position:relative;background-size:35px 20px,100% 100%,100% 100%;border-radius:3px;background:#2dced7;-ms-animation:animate-stripes;-moz-animation:animate-stripes;-o-animation:animate-stripes;-webkit-animation:animate-stripes;animation:animate-stripes}
+header section.central .habilidades .frontend ul li progress[value]::-webkit-progress-value:after,header section.central .habilidades .backend ul li progress[value]::-webkit-progress-value:after{content:'';position:absolute;width:5px;height:5px;top:7px;right:7px;background-color:#fff;border-radius:100%}
+header section.central .habilidades .frontend ul li p[data-value],header section.central .habilidades .backend ul li p[data-value]{text-align:left;position:relative;margin-bottom:5px;}
+header section.central .habilidades .frontend ul li p[data-value]:after,header section.central .habilidades .backend ul li p[data-value]:after{content:attr(data-value) '%';position:absolute;font-weight:bold;right:0}
+header section.central .habilidades .frontend ul li:nth-child(2) progress[value]::-webkit-progress-value,header section.central .habilidades .backend ul li:nth-child(2) progress[value]::-webkit-progress-value{background:#dc143c}
+header section.central .habilidades .frontend ul span.second,header section.central .habilidades .backend ul span.second{border-radius:50%;font-size:45px}
+header section.central .habilidades .frontend h3,header section.central .habilidades .backend h3{background:#fff;color:#3c9cc1;width:100%;padding:3px;margin-bottom:15px;position:relative}
+header section.central .habilidades h2{background:#3c9cc1;padding:5px;box-shadow:0 0 5px rgba(0,0,0,0.2)}
+header section.central .ejemplo{background:#fff;position:relative;color:#333;}
+header section.central .ejemplo span.letterBig{font-size:56px;line-height:50px;float:left;padding-right:10px}
+header section.central .ejemplo p{text-align:left;}
+header section.central .ejemplo p span{display:block;font-weight:bold;text-align:left}
+header section.central .ejemplo .contentEjemplo{font-weight:100;text-align:center;}
+header section.central .ejemplo .contentEjemplo p{padding:20px}
+header section.central .ejemplo .contentEjemplo .shop,header section.central .ejemplo .contentEjemplo .inventario{display:inline-block;background:#fafafa;border-radius:3px;width:250px;border:1px solid #c0c0c0;height:200px;padding:10px;vertical-align:top;text-align:left;margin-bottom:10px;}
+header section.central .ejemplo .contentEjemplo .shop .item,header section.central .ejemplo .contentEjemplo .inventario .item{cursor:pointer;width:64px;height:64px;background:#6f6f6f;border:2px solid transparent;display:inline-block;padding:0;margin:2px;z-index:9999999;}
+header section.central .ejemplo .contentEjemplo .shop .item:hover,header section.central .ejemplo .contentEjemplo .inventario .item:hover{border:2px solid #ffa500;background:#333}
+header section.central .ejemplo .contentEjemplo .shop .item img,header section.central .ejemplo .contentEjemplo .inventario .item img{z-index:-1}
+header section.central .ejemplo .contentEjemplo .shop .item .costo,header section.central .ejemplo .contentEjemplo .inventario .item .costo{font-weight:bold;font-size:14px}
+header section.central .ejemplo .contentEjemplo .inventario .item .costo{display:none}
+header section.central .ejemplo .contentEjemplo .alert{display:block;padding:10px;color:#ffa500;font-style:normal;font-size:14px}
+header section.central .ejemplo .contentEjemplo .info{text-align:center;display:block;}
+header section.central .ejemplo .contentEjemplo .info .oro{font-weight:bold}
+header section.central .ejemplo .contentEjemplo .listSongs,header section.central .ejemplo .contentEjemplo .reproductor{background:#606060;padding:5px;height:200px;width:45%;display:inline-block;vertical-align:middle;margin-bottom:10px;}
+header section.central .ejemplo .contentEjemplo .listSongs ul,header section.central .ejemplo .contentEjemplo .reproductor ul{list-style:none;text-align:left;}
+header section.central .ejemplo .contentEjemplo .listSongs ul li,header section.central .ejemplo .contentEjemplo .reproductor ul li{display:block;margin-bottom:5px;font-style:normal;font-size:13px;padding:4px;cursor:pointer;}
+header section.central .ejemplo .contentEjemplo .listSongs ul li:hover,header section.central .ejemplo .contentEjemplo .reproductor ul li:hover{background:#333}
+header section.central .ejemplo .contentEjemplo .listSongs ul li span.iconPP,header section.central .ejemplo .contentEjemplo .reproductor ul li span.iconPP{background:#e4e4e4;color:#333;width:10px;height:10px;padding:2px 7px 2px 7px;border-radius:50%;font-weight:bold;margin-right:5px;}
+header section.central .ejemplo .contentEjemplo .listSongs ul li span.iconPP:hover,header section.central .ejemplo .contentEjemplo .reproductor ul li span.iconPP:hover{background:#fff;color:#333}
+header section.central .ejemplo .contentEjemplo .listSongs ul li .playing,header section.central .ejemplo .contentEjemplo .reproductor ul li .playing{background:#ffa500 !important}
+header section.central .ejemplo .contentEjemplo .listSongs video,header section.central .ejemplo .contentEjemplo .reproductor video,header section.central .ejemplo .contentEjemplo .listSongs audio,header section.central .ejemplo .contentEjemplo .reproductor audio{width:100%;height:100%}
+header section.central .ejemplo .contentEjemplo .listSongs audio,header section.central .ejemplo .contentEjemplo .reproductor audio{display:block;padding:10px}
+header section.central .ejemplo .contentEjemplo .reproductor{background-size:cover;padding:0}
+header section.central .ejemplo .contentEjemplo .cAnimation{text-align:center;width:200px;height:70px;position:relative;margin:0 auto;}
+header section.central .ejemplo .contentEjemplo .cAnimation .brazuca{background:url("../ejemplos/frontend/img/brazuca.png");background-size:cover;width:70px;height:70px;left:0;position:absolute;-ms-animation:brazuca 2s linear infinite;-moz-animation:brazuca 2s linear infinite;-o-animation:brazuca 2s linear infinite;-webkit-animation:brazuca 2s linear infinite;animation:brazuca 2s linear infinite}
+header section.central .ejemplo .contentEjemplo .chat div.left,header section.central .ejemplo .contentEjemplo .todo div.left,header section.central .ejemplo .contentEjemplo .chat div.right,header section.central .ejemplo .contentEjemplo .todo div.right{display:inline-block;vertical-align:middle;position:relative;width:45%;}
+header section.central .ejemplo .contentEjemplo .chat div.left a,header section.central .ejemplo .contentEjemplo .todo div.left a,header section.central .ejemplo .contentEjemplo .chat div.right a,header section.central .ejemplo .contentEjemplo .todo div.right a{color:#61bbe7;text-decoration:none}
+header section.central .ejemplo .contentEjemplo .chat div.left iframe,header section.central .ejemplo .contentEjemplo .todo div.left iframe,header section.central .ejemplo .contentEjemplo .chat div.right iframe,header section.central .ejemplo .contentEjemplo .todo div.right iframe{width:100%;height:440px;z-index:-1}
+header section.central .ejemplo .contentEjemplo .chat div.left .buttonAtras,header section.central .ejemplo .contentEjemplo .todo div.left .buttonAtras,header section.central .ejemplo .contentEjemplo .chat div.right .buttonAtras,header section.central .ejemplo .contentEjemplo .todo div.right .buttonAtras{position:absolute;bottom:0;right:-1px;padding:6px 12px;cursor:pointer;background:#dc143c;}
+header section.central .ejemplo .contentEjemplo .chat div.left .buttonAtras:hover,header section.central .ejemplo .contentEjemplo .todo div.left .buttonAtras:hover,header section.central .ejemplo .contentEjemplo .chat div.right .buttonAtras:hover,header section.central .ejemplo .contentEjemplo .todo div.right .buttonAtras:hover{background:#34afd3}
+header section.central .ejemplo .contentEjemplo .chat .right,header section.central .ejemplo .contentEjemplo .todo .right{background:#fff;box-shadow:0 0 10px rgba(0,0,0,0.1)}
+header section.central .ejemplo:nth-child(2){background:#333;color:#fff}
+header section.central .ejemplo .media{position:relative;width:100%;height:50px;}
+header section.central .ejemplo .media .github{cursor:pointer;position:absolute;right:0;border:1px solid #868686;border-radius:50%;background:#fff;width:60px;margin:5px;height:60px;padding:10px 5px;z-index:99999;}
+header section.central .ejemplo .media .github:hover{-ms-animation:spin 1s ease-in-out;-moz-animation:spin 1s ease-in-out;-o-animation:spin 1s ease-in-out;-webkit-animation:spin 1s ease-in-out;animation:spin 1s ease-in-out}
+header section.central .ejemplo .media .github a img{width:40px}
+header section.central .ejemplo .atras{position:absolute;width:100px;left:0;padding:5px;border:0;top:-30px;background:#34afd3;}
+header section.central .ejemplo .atras a{color:#fff;text-decoration:none}
+header section.central .ejemplo .atras:hover{background:#dc143c}
+header section.librerias{background:#fff;padding:20px;box-shadow:inset 0 0 50px rgba(0,0,0,0.05);color:#333;}
+header section.librerias h3{margin:0 0 20px 0}
+header section.librerias ul li{display:inline-block;vertical-align:top;margin-bottom:10px;}
+header section.librerias ul li figure{padding:10px;background:#f5f5f5;color:#333;}
+header section.librerias ul li figure img{width:120px;height:100px}
+header section.ejemplosLink{padding:20px;box-shadow:inset 0 0 50px rgba(0,0,0,0.1);color:#fff;}
+header section.ejemplosLink h3{margin:0 0 20px 0}
+header section.ejemplosLink p{padding:20px}
+header section.ejemplosLink a{font-style:normal;text-decoration:none;color:#fff;font-weight:bold;display:inline-block;vertical-align:middle;padding:10px 20px 6px 20px;background:#dc143c;}
+header section.ejemplosLink a:hover{background:#34afd3}
+header section.objectives{box-shadow:inset 0 0 50px rgba(0,0,0,0.1);padding:1px;background:#fff;}
+header section.objectives h3{color:#333;margin:20px 0 10px 0;font-size:42px;text-shadow:0 0 3px rgba(255,255,255,0.5)}
+header section.objectives .app{width:100%;display:block;font-size:44px;font-weight:bold;color:#ffa500;text-shadow:.5px 0 0 #fff,-.5px 0 0 #fff,0 2px 0 #fff,0 -2px 0 #fff,1px 1px #fff,-1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff}
+header section.objectives .listObj{width:100%;padding:20px;display:block;vertical-align:middle;}
+header section.objectives .listObj ul{list-style:disc;}
+header section.objectives .listObj ul li{display:block;font-size:22px;text-align:right;padding-right:0;margin-bottom:10px;color:#333;}
+header section.objectives .listObj ul li:nth-child(even){color:#000}
+header section.footer{color:#fff;padding:20px}
+@media screen and (min-width: 768px){header{width:768px;margin:0 auto;}
+header section.central .perfil,header section.central .habilidades{width:40%;vertical-align:top;display:inline-block;padding:0;}
+header section.central .perfil .frontend ul,header section.central .habilidades .frontend ul,header section.central .perfil .backend ul,header section.central .habilidades .backend ul{padding:0 10px 0 0}
+header section.central .habilidades{width:55%;}
+header section.central .habilidades .frontend,header section.central .habilidades .backend{float:left;width:50%;}
+header section.central .habilidades .frontend h3.frontend,header section.central .habilidades .backend h3.frontend{color:#fff;background:#92d926;width:100%;}
+header section.central .habilidades .frontend h3.frontend:after,header section.central .habilidades .backend h3.frontend:after{content:"";width:0;height:0;border-top:30px solid #fff;border-left:30px solid #92d926;top:-.5px;right:-10px;z-index:999999;position:absolute}
+header section.objectives .app,header section.objectives .listObj{width:45%;display:inline-block;vertical-align:middle}
+}@media screen and (max-width: 768px){header section.central .ejemplo .contentEjemplo .listSongs,header section.central .ejemplo .contentEjemplo .reproductor{display:block;width:100%}
+header section.central .ejemplo .contentEjemplo .chat div.left,header section.central .ejemplo .contentEjemplo .chat div.right{display:block;width:100%;}
+header section.central .ejemplo .contentEjemplo .chat div.left a,header section.central .ejemplo .contentEjemplo .chat div.right a{color:#61bbe7;text-decoration:none}
+}@-moz-keyframes spin{50%{-ms-transform:scale(1.2) rotate(360deg);-moz-transform:scale(1.2) rotate(360deg);-o-transform:scale(1.2) rotate(360deg);-webkit-transform:scale(1.2) rotate(360deg);transform:scale(1.2) rotate(360deg)}
+}@-webkit-keyframes spin{50%{-ms-transform:scale(1.2) rotate(360deg);-moz-transform:scale(1.2) rotate(360deg);-o-transform:scale(1.2) rotate(360deg);-webkit-transform:scale(1.2) rotate(360deg);transform:scale(1.2) rotate(360deg)}
+}@-o-keyframes spin{50%{-ms-transform:scale(1.2) rotate(360deg);-moz-transform:scale(1.2) rotate(360deg);-o-transform:scale(1.2) rotate(360deg);-webkit-transform:scale(1.2) rotate(360deg);transform:scale(1.2) rotate(360deg)}
+}@-ms-keyframes spin{50%{-ms-transform:scale(1.2) rotate(360deg);-moz-transform:scale(1.2) rotate(360deg);-o-transform:scale(1.2) rotate(360deg);-webkit-transform:scale(1.2) rotate(360deg);transform:scale(1.2) rotate(360deg)}
+}@keyframes spin{50%{-ms-transform:scale(1.2) rotate(360deg);-moz-transform:scale(1.2) rotate(360deg);-o-transform:scale(1.2) rotate(360deg);-webkit-transform:scale(1.2) rotate(360deg);transform:scale(1.2) rotate(360deg)}
+}@-moz-keyframes brazuca{100%{left:0;-ms-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+50%{left:70%}
+}@-webkit-keyframes brazuca{100%{left:0;-ms-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+50%{left:70%}
+}@-o-keyframes brazuca{100%{left:0;-ms-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+50%{left:70%}
+}@-ms-keyframes brazuca{100%{left:0;-ms-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+50%{left:70%}
+}@keyframes brazuca{100%{left:0;-ms-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+50%{left:70%}
+}
