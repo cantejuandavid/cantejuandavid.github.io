@@ -477,6 +477,7 @@ header section.ejemplosLink a {
   display: inline-block;
   vertical-align: middle;
   padding: 10px 20px 6px 20px;
+  margin-bottom: 10px;
   background: #dc143c;
 }
 header section.ejemplosLink a:hover {
@@ -536,7 +537,7 @@ header section.contact h3 {
 }
 header section.contact article.contentContact div {
   display: block;
-  height: 30px;
+  margin-bottom: 10px;
   font-size: 20px;
 }
 header section.contact article.contentContact div .mail,
@@ -559,22 +560,6 @@ header section.contactEjemplos h3 {
   color: #333;
   margin: 0 0 10px 0;
   font-size: 42px;
-}
-header section.contactEjemplos article.contentContact div {
-  display: block;
-  height: 30px;
-  font-size: 20px;
-}
-header section.contactEjemplos article.contentContact div .mail,
-header section.contactEjemplos article.contentContact div a {
-  cursor: pointer;
-  color: #dc143c;
-  font-weight: bold;
-  text-decoration: none;
-}
-header section.contactEjemplos article.contentContact div .mail:hover,
-header section.contactEjemplos article.contentContact div a:hover {
-  color: #34afd3;
 }
 @media screen and (min-width: 768px) {
   header {
