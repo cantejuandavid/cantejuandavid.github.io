@@ -550,6 +550,32 @@ header section.contact article.contentContact div .mail:hover,
 header section.contact article.contentContact div a:hover {
   color: #34afd3;
 }
+header section.contactEjemplos {
+  padding: 20px;
+  background: #fff;
+  color: #333;
+}
+header section.contactEjemplos h3 {
+  color: #333;
+  margin: 0 0 10px 0;
+  font-size: 42px;
+}
+header section.contactEjemplos article.contentContact div {
+  display: block;
+  height: 30px;
+  font-size: 20px;
+}
+header section.contactEjemplos article.contentContact div .mail,
+header section.contactEjemplos article.contentContact div a {
+  cursor: pointer;
+  color: #dc143c;
+  font-weight: bold;
+  text-decoration: none;
+}
+header section.contactEjemplos article.contentContact div .mail:hover,
+header section.contactEjemplos article.contentContact div a:hover {
+  color: #34afd3;
+}
 @media screen and (min-width: 768px) {
   header {
     width: 768px;
