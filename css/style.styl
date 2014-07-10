@@ -281,7 +281,8 @@ header
 						display inline-block
 						vertical-align middle
 						position relative
-						width 45%						
+						width 45%		
+						overflow hidden				
 						a
 							color #61BBE7
 							text-decoration none
@@ -289,7 +290,8 @@ header
 							width 100%
 							height 440px
 							z-index -1
-						.buttonAtras
+						.buttonAtras,.waitMessage
+							color #fff
 							position absolute 
 							bottom 0px
 							right -1px
@@ -298,6 +300,12 @@ header
 							background crimson
 							&:hover
 								background #34AFD3
+						.waitMessage
+							top 50%
+							left 20%
+							right 20%
+							box-shadow 0 0 5px rgba(0,0,0,.2)
+							bottom auto							
 					.right
 						background #fff
 						box-shadow 0 0 10px rgba(0,0,0,.1)					
@@ -341,7 +349,7 @@ header
 	section.librerias
 		background #fff
 		padding 20px
-		box-shadow inset 0 0 50px rgba(0,0,0,.05)
+		box-shadow inset 0 0 60px rgba(0,0,0,.02)
 		color #333
 		h3
 			margin 0 0 20px 0
