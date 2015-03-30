@@ -1,0 +1,522 @@
+transition(seg)
+	-ms-transition all seg ease-in-out
+	-moz-transition all seg ease-in-out
+	-o-transition all seg ease-in-out
+	-webkit-transition all seg ease-in-out
+	transition all seg ease-in-out
+transform(arguments)
+	-ms-transform arguments
+	-moz-transform arguments
+	-o-transform arguments
+	-webkit-transform arguments
+	transform arguments
+animation(arguments)
+	-ms-animation arguments
+	-moz-animation arguments
+	-o-animation arguments
+	-webkit-animation arguments
+	animation arguments
+
+*, *:before, *:after 
+	-moz-box-sizing border-box
+	-webkit-box-sizing border-box
+	box-sizing border-box	
+
+*
+	margin 0
+	padding 0
+	transition(.1s)
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:600italic")
+@import url("http://fonts.googleapis.com/css?family=Josefin+Slab:700")
+
+body	
+	background url("../img/binding_dark.png") repeat fixed	
+	color #fff
+	font italic 600 16px 'Open Sans', sans-serif
+
+header
+	background #232323
+	display block
+	text-align center
+	padding 1px
+	h1
+		margin 50px
+		background #353535
+		position relative
+		padding 10px	
+		a
+			color #fff
+			text-decoration none	
+		&:after
+			content ""
+			position absolute
+			bottom -20px
+			border-left 80px solid transparent
+			border-top 20px solid #353535
+			border-right 80px solid transparent			
+			left 50%
+			margin-left -80px		
+	section.central			
+		.perfil		
+			display block	
+			padding 20px
+			text-align center			
+			figure		
+				.wrapperImg
+					border 2px dashed #fff			
+					border-radius 50%
+					box-shadow 0 0 10px rgba(0,0,0,.1)
+					margin 0 auto
+					overflow hidden
+					width 130px	
+					height 130px					
+					img
+						width 100%
+				figcaption
+			blockquote
+				line-height 18px
+				padding 5px
+				color #ddd
+				font-size 14px				
+				&:before
+					content open-quote
+					color yellow
+					font-size 25px
+				&:after
+					content close-quote
+					color yellow
+					font-size 25px
+		.habilidades			
+			display block
+			.frontend,.backend
+				display block
+				ul
+					list-style none
+					padding 0 20px 0 20px
+					li					
+						display block					
+						progress[value] 							
+							appearance none
+							border none
+							width 100%
+							height 20px							
+							background-color whiteSmoke
+							border-radius 3px
+							box-shadow 0 2px 3px rgba(0,0,0,.5) inset							
+							color royalblue
+							position relative
+							margin 0 0 1.5em
+							overflow hidden
+							&::-webkit-progress-bar
+								background-color whiteSmoke
+								border-radius 3px
+								box-shadow 0 2px 3px rgba(0,0,0,.5) inset
+							&::-webkit-progress-value
+								position relative
+								background-size 35px 20px, 100% 100%, 100% 100%
+								border-radius 3px
+								background #2DCED7
+								animation animate-stripes 5s linear infinite
+							&::-webkit-progress-value:after
+								content ''
+								position absolute
+								width 5px 
+								height 5px
+								top 7px
+								right 7px
+								background-color white
+								border-radius 100%
+						p[data-value] 
+							text-align left
+							position relative
+							margin-bottom 5px
+							&:after
+								content attr(data-value) '%'
+								position absolute
+								font-weight bold
+								right 0
+					li:nth-child(2)
+						progress[value]							
+							&::-webkit-progress-value
+								background crimson
+					span.second
+						border-radius 50%						
+						font-size 45px						
+				h3
+					background #fff
+					color #3C9CC1
+					width 100%					
+					padding 3px
+					margin-bottom 15px
+					position relative					
+			h2
+				background #3C9CC1
+				padding 5px
+				box-shadow 0 0 5px rgba(0,0,0,.2)				
+		.ejemplo
+			background #fff
+			position relative
+			color #333			
+			span.letterBig
+				font-size 56px
+				line-height 50px
+				float left
+				padding-right 10px
+			p
+				text-align left
+				span
+					display block
+					font-weight bold
+
+					text-align left
+			.contentEjemplo
+				font-weight 100				
+				text-align center							
+				p
+					padding 20px
+				.shop,.inventario
+					display inline-block
+					background #fafafa
+					border-radius 3px
+					width 250px
+					border 1px solid #C0C0C0
+					height 200px					
+					padding 10px
+					vertical-align top
+					text-align left		
+					margin-bottom 10px			
+					.item
+						cursor pointer
+						width 64px
+						height 64px
+						background #6F6F6F 	
+						border 2px solid transparent
+						display inline-block	
+						padding 0	
+						margin 2px
+						z-index 9999999
+						&:hover
+							border 2px solid orange				
+							background #333
+						img
+							z-index -1
+						.costo
+							font-weight bold
+							font-size 14px
+				.inventario					
+					.item						
+						.costo
+							display none
+				.alert
+					display block
+					padding 10px
+					color orange					
+					font-style normal
+					font-size 14px
+				.info
+					text-align center					
+					display block
+					.oro
+						font-weight bold
+				.listSongs,.reproductor
+					background #606060
+					padding 5px
+					height 200px
+					width 45%
+					display inline-block 
+					vertical-align middle
+					margin-bottom 10px
+					ul
+						list-style none
+						text-align left
+						li
+							display block
+							margin-bottom 5px
+							font-style normal
+							font-size 13px
+							padding 4px
+							cursor pointer
+							&:hover
+								background #333	
+							span.iconPP
+								background #E4E4E4
+								color #333
+								width 10px
+								height 10px
+								padding 2px 7px 2px 7px
+								border-radius 50%
+								font-weight bold
+								margin-right 5px
+								&:hover
+									background #fff
+									color #333
+							.playing
+								background orange !important
+					video,audio									
+						width 100%
+						height 100%						
+					audio						
+						display block
+						padding 10px
+				.reproductor					
+					background-size cover
+					padding 0		
+				.cAnimation
+					text-align center
+					width 200px
+					height 70px							
+					position relative
+					margin 0 auto
+					.brazuca
+						background url(../ejemplos/frontend/img/brazuca.png)					
+						background-size cover
+						width 70px
+						height 70px				
+						left 0		
+						position absolute
+						animation(brazuca 2s linear infinite)
+				.chat,.todo					
+					div.left, div.right						
+						display inline-block
+						vertical-align middle
+						position relative
+						width 45%		
+						overflow hidden				
+						a
+							color #61BBE7
+							text-decoration none
+						iframe
+							width 100%
+							height 440px
+							z-index -1
+						.buttonAtras,.waitMessage
+							color #fff
+							position absolute 
+							bottom 0px
+							right -1px
+							padding 6px 12px
+							cursor pointer
+							background crimson
+							&:hover
+								background #34AFD3
+						.waitMessage
+							top 50%
+							left 20%
+							right 20%
+							box-shadow 0 0 5px rgba(0,0,0,.2)
+							bottom auto							
+					.right
+						background #fff
+						box-shadow 0 0 10px rgba(0,0,0,.1)					
+			&:nth-child(2)
+				background #333
+				color #fff
+			.media
+				position relative
+				width 100%				
+				height 50px
+				.github
+					cursor pointer
+					position absolute
+					right 0
+					border 1px solid #868686
+					border-radius 50%
+					background #fff
+					width 60px
+					margin 5px
+					height 60px
+					padding 10px 5px
+					z-index 99999
+					&:hover								
+						animation(spin 1s ease-in-out)
+					a												
+						img
+							width 40px
+			.atras
+				position absolute				
+				width 100px								
+				left 0
+				padding 5px				
+				border 0
+				top -30px				
+				background #34AFD3	
+				a
+					color #fff
+					text-decoration none
+				&:hover
+					background crimson							
+	section.librerias
+		background #fff
+		padding 20px
+		box-shadow inset 0 0 60px rgba(0,0,0,.02)
+		color #333
+		h3
+			margin 0 0 20px 0
+		ul
+			li
+				display inline-block
+				vertical-align top
+				margin-bottom 10px
+				figure
+					padding 10px
+					background #F5F5F5
+					color #333
+					img
+						width 120px	
+
+						height 100px	
+	section.ejemplosLink
+		padding 20px
+		box-shadow inset 0 0 50px rgba(0,0,0,.1)		
+		color #fff
+		h3
+			margin 0 0 20px 0
+		p
+			padding 20px
+		a
+			font-style normal
+			text-decoration none
+			color #fff
+			font-weight bold
+			display inline-block
+			vertical-align middle
+			padding 10px 20px 6px 20px
+			margin-bottom 10px
+			background crimson
+			&:hover
+				background #34AFD3
+	section.objectives
+		box-shadow inset 0 0 50px rgba(0,0,0,.1)
+		padding 1px
+		background #fff
+		h3
+			color #333
+			margin 20px 0 10px 0
+			font-size 42px
+			text-shadow 0 0 3px rgba(255,255,255,.5)
+		.app
+			width 100%
+			display block
+			font-size 44px
+			font-weight bold
+			color orange
+			text-shadow: 0.5px 0 0 #FFF,
+						-0.5px 0 0 #FFF,
+						0 2px 0 #FFF,
+						0 -2px 0 #FFF,
+						1px 1px #FFF,
+						-1px -1px 0 #FFF,
+						1px -1px 0 #FFF,
+						-1px 1px 0 #FFF;
+		.listObj
+			width 100%
+			padding 20px
+			display block
+			vertical-align middle			
+			ul
+				list-style disc				
+				li
+					display block
+					font-size 22px
+					text-align right
+					padding-right 0
+					margin-bottom 10px
+					color #333
+					&:nth-child(even)
+						color #000
+	section.footer		
+		background #fff
+		color #333
+		padding 20px
+	section.contact		
+		padding 20px
+		h3
+			color #fff
+			margin 0 0 10px 0
+			font-size 42px			
+		article.contentContact
+			div
+				display block
+				margin-bottom 10px					
+				font-size 20px
+				.mail,a
+					cursor pointer
+					color crimson
+					font-weight bold							
+					text-decoration none
+					&:hover
+						color #34AFD3	
+	section.contactEjemplos
+		padding 20px
+		background #fff
+		color #333
+		h3		
+			color #333	
+			margin 0 0 10px 0
+			font-size 42px				
+			
+@media screen and (min-width: 768px)
+	header
+		width 768px
+		margin 0 auto
+		section.central
+			.perfil,.habilidades
+				width 40%
+				vertical-align top
+				display inline-block
+				padding 0
+				.frontend,.backend
+					ul
+						padding 0 10px 0 0					
+			.habilidades
+				width 55%
+				.frontend,.backend
+					float left					
+					width 50%	
+					h3.frontend
+						color #fff
+						background #92D926
+						width 100%
+						&:after
+							content ""
+							width 0
+							height 0
+							border-top 30px solid #fff
+							border-left 30px solid #92D926
+							top -0.5px
+							right -10px
+							z-index 999999
+							position absolute
+		section.objectives
+			.app,.listObj
+				width 45%
+				display inline-block
+				vertical-align middle			
+
+@media screen and (max-width: 768px)
+	header
+		section.central
+			.ejemplo
+				.contentEjemplo
+					.listSongs,.reproductor
+						display block
+						width 100%
+					.chat
+						div.left, div.right		
+							display block							
+							width 100%
+							a
+								color #61BBE7
+								text-decoration none
+
+@keyframes spin 
+	50% 		
+		transform(scale(1.2) rotate(360deg))
+	
+@keyframes brazuca 
+	100% 		
+		left 0
+		transform(rotate(360deg))
+	50%				
+		left 70%
