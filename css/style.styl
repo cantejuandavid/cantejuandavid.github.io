@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Open+Sans+Sans:400,800');
+transition(seg)
+	-ms-transition all seg ease-in-out
+	-moz-transition all seg ease-in-out
+	-o-transition all seg ease-in-out
+	-webkit-transition all seg ease-in-out
+	transition all seg ease-in-out
+transform(arguments)
+	-ms-transform arguments
+	-moz-transform arguments
+	-o-transform arguments
+	-webkit-transform arguments
+	transform arguments
+animation(arguments)
+	-ms-animation arguments
+	-moz-animation arguments
+	-o-animation arguments
+	-webkit-animation arguments
+	animation arguments
+
+*, *:before, *:after 
+	-moz-box-sizing border-box
+	-webkit-box-sizing border-box
+	box-sizing border-box	
+
+
+body	
+	font-family 'Open Sans', sans-serif
+	font-size 20px
+	overflow-y scroll
+a	
+	&:hover
+		text-decoration none		
+header
+	background #0c1a1e
+	box-shadow 0 0 13px rgba(0,0,0,.6)
+	h1
+		color #fff
+		text-shadow 0 0 3px rgba(0,0,0,.2)
+		a
+			color #fff
+			&:hover
+				color #fff
+	nav
+		ul
+			list-style none
+			text-align right
+			margin 0
+			padding 20px
+			li
+				display inline-block
+				font-size 0
+				a
+					color orange
+					font-weight bold
+					font-size 18px
+					padding 10px 10px 10px 10px
+					text-shadow 0 0 3px rgba(0,0,0,.2)
+					&.active
+						color #fff
+					&:hover
+						text-decoration none
+						color #fff
+				.flecha_in
+					font-size 18px
+					color #fff
+section.front
+	background-image url('../images/who_is2.jpg')
+	background-size cover
+	min-height 500px
+	article.who_is
+		background rgba(0,0,0,.5)
+		margin-top 30px
+		padding 20px
+		text-shadow 1px 1px 3px rgba(0,0,0,.6)
+		img.developer_me
+			display block
+			margin 0 auto
+			width 350px
+		h3
+			color #fff
+			font-family 'Open Sans', sans-serif	
+			font-weight 800
+		ul
+			font-size 16px
+			font-weight bold
+			color #fff
+			list-style none
+			margin 0
+			padding 0
+			li
+				span
+					color orange
+			.list_skills
+				margin-bottom 10px					
+			ul
+				margin-left 20px
+.btn
+	border-radius 0
+	box-shadow 1px 1px 3px rgba(0,0,0,.3)
+.container_projects
+	margin-top 20px
+	.project		
+		font-size 14px
+		margin-bottom 40px		
+		.img_project
+			img
+				box-shadow -2px 2px 5px rgba(0,0,0,.2)
+				width 100%
+		.detail_project
+			.nameAppLink
+				font-size 24px
+			.detail_technologies
+				margin-top 10px
+.portafolio, .sobre_mi
+	margin-top 30px
+.sobre_mi
+	font-size 16px
+	margin-bottom 20px
+	p
+		text-align justify
+footer
+	background-color #0c1a1e
+	min-height 350px
+	font-family 'Open Sans', sans-serif
+.text_orange
+	color orange
+.footerleft
+	margin-top 50px
+	padding 0 36px
+	
+.logofooter
+	margin-bottom 10px
+	font-size 25px
+	color #fff
+	font-weight 700
+
+.footerleft
+	p
+		color #fff
+		font-size 12px !important
+		font-family 'Open Sans', sans-serif
+		margin-bottom 15px
+		i
+			width 20px
+			color #999
+
+.paddingtop-bottom
+	margin-top 50px
+	
+.footer-ul 
+	list-style-type:none
+	padding-left:0px
+	margin-left 2px
+	li
+		line-height 29px
+		font-size 12px
+		a
+			color:#a0a3a4
+			transition color 0.2s linear 0s, background 0.2s linear 0s
+			&:hover
+				transition color 0.2s linear 0s, background 0.2s linear 0s; color:#ff670f
+				
+	i 
+		margin-right 10px
+
+.social:hover
+	transform: scale(1.1)
+ 
+ 
+
+ 
+ .icon-ul { list-style-type:none !important; margin:0px; padding:0px;}
+ .icon-ul li { line-height:75px; width:100%; float:left;}
+ .icon { float:left; margin-right:5px;}
+ 
+ 
+ .copyright { font-size:16px; min-height:40px; background-color:#000000;}
+ .copyright p { text-align:left; color:#FFF; padding:10px 0; margin-bottom:0px;}
+ .heading7 { font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;}
+ .post p { font-size:12px; color:#FFF; line-height:20px;}
+ .post p span { display:block; color:#8f8f8f;}
+ .bottom_ul { list-style-type:none; float:right; margin-bottom:0px;}
+ .bottom_ul li { float:left; line-height:40px;}
+ .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
+ .bottom_ul li a { color:#FFF;  font-size:12px;}
+ 
+
+section.central			
+	.perfil		
+		display block	
+		padding 20px
+		text-align center			
+		figure		
+			.wrapperImg
+				border 2px dashed #fff			
+				border-radius 50%
+				box-shadow 0 0 10px rgba(0,0,0,.1)
+				margin 0 auto
+				overflow hidden
+				width 130px	
+				height 130px					
+				img
+					width 100%
+			figcaption
+		blockquote
+			line-height 18px
+			padding 5px
+			color #ddd
+			font-size 14px				
+			&:before
+				content open-quote
+				color yellow
+				font-size 25px
+			&:after
+				content close-quote
+				color yellow
+				font-size 25px
+	.habilidades			
+		display block
+		.frontend,.backend
+			display block
+			ul
+				list-style none
+				padding 0 20px 0 20px
+				li					
+					display block					
+					progress[value] 							
+						appearance none
+						border none
+						width 100%
+						height 20px							
+						background-color whiteSmoke
+						border-radius 3px
+						box-shadow 0 2px 3px rgba(0,0,0,.5) inset							
+						color royalblue
+						position relative
+						margin 0 0 1.5em
+						overflow hidden
+						&::-webkit-progress-bar
+							background-color whiteSmoke
+							border-radius 3px
+							box-shadow 0 2px 3px rgba(0,0,0,.5) inset
+						&::-webkit-progress-value
+							position relative
+							background-size 35px 20px, 100% 100%, 100% 100%
+							border-radius 3px
+							background #2DCED7
+							animation animate-stripes 5s linear infinite
+						&::-webkit-progress-value:after
+							content ''
+							position absolute
+							width 5px 
+							height 5px
+							top 7px
+							right 7px
+							background-color white
+							border-radius 100%
+					p[data-value] 
+						text-align left
+						position relative
+						margin-bottom 5px
+						&:after
+							content attr(data-value) '%'
+							position absolute
+							font-weight bold
+							right 0
+				li:nth-child(2)
+					progress[value]							
+						&::-webkit-progress-value
+							background crimson
+				span.second
+					border-radius 50%						
+					font-size 45px						
+			h3
+				background #fff
+				color #3C9CC1
+				width 100%					
+				padding 3px
+				margin-bottom 15px
+				position relative					
+		h2
+			background #3C9CC1
+			padding 5px
+			box-shadow 0 0 5px rgba(0,0,0,.2)				
+	.ejemplo
+		background #fff
+		position relative
+		color #333			
+		span.letterBig
+			font-size 56px
+			line-height 50px
+			float left
+			padding-right 10px
+		p
+			text-align left
+			span
+				display block
+				font-weight bold
+
+				text-align left
+		.contentEjemplo
+			font-weight 100				
+			text-align center							
+			p
+				padding 20px
+			.shop,.inventario
+				display inline-block
+				background #fafafa
+				border-radius 3px
+				width 250px
+				border 1px solid #C0C0C0
+				height 200px					
+				padding 10px
+				vertical-align top
+				text-align left		
+				margin-bottom 10px			
+				.item
+					cursor pointer
+					width 64px
+					height 64px
+					background #6F6F6F 	
+					border 2px solid transparent
+					display inline-block	
+					padding 0	
+					margin 2px
+					z-index 9999999
+					&:hover
+						border 2px solid orange				
+						background #333
+					img
+						z-index -1
+					.costo
+						font-weight bold
+						font-size 14px
+			.inventario					
+				.item						
+					.costo
+						display none
+			.alert
+				display block
+				padding 10px
+				color orange					
+				font-style normal
+				font-size 14px
+			.info
+				text-align center					
+				display block
+				.oro
+					font-weight bold
+			.listSongs,.reproductor
+				background #606060
+				padding 5px
+				height 250px
+				margin-bottom 10px
+				ul
+					list-style none
+					text-align left
+					li
+						display block
+						margin-bottom 5px
+						font-style normal
+						font-size 13px
+						padding 4px
+						cursor pointer
+						&:hover
+							background #333	
+						span.iconPP
+							background #E4E4E4
+							color #333
+							width 10px
+							height 10px
+							padding 2px 7px 2px 7px
+							border-radius 50%
+							font-weight bold
+							margin-right 5px
+							&:hover
+								background #fff
+								color #333
+						.playing
+							background orange !important
+				video,audio									
+					width 100%
+					height 100%						
+				audio						
+					display block
+					padding 10px
+			.reproductor					
+				background-size cover
+				padding 0		
+			.cAnimation
+				text-align center
+				width 200px
+				height 70px							
+				position relative
+				margin 0 auto
+				.brazuca
+					background url(../images/brazuca.png)					
+					background-size cover
+					width 70px
+					height 70px				
+					left 0		
+					position absolute
+					animation(brazuca 2s linear infinite)
+			.chat,.todo					
+				div.left, div.right						
+					display inline-block
+					vertical-align middle
+					position relative
+					width 45%		
+					overflow hidden				
+					a
+						color #61BBE7
+						text-decoration none
+					iframe
+						width 100%
+						height 440px
+						z-index -1
+					.buttonAtras,.waitMessage
+						color #fff
+						position absolute 
+						bottom 0px
+						right -1px
+						padding 6px 12px
+						cursor pointer
+						background crimson
+						&:hover
+							background #34AFD3
+					.waitMessage
+						top 50%
+						left 20%
+						right 20%
+						box-shadow 0 0 5px rgba(0,0,0,.2)
+						bottom auto							
+				.right
+					background #fff
+					box-shadow 0 0 10px rgba(0,0,0,.1)					
+		&:nth-child(2)
+			background #333
+			color #fff
+		.media
+			position relative
+			width 100%				
+			height 60px
+			overflow visible !important
+			.github
+				cursor pointer
+				position absolute
+				right 0				
+				box-shadow 0 0 6px rgba(0,0,0,.4)
+				border-radius 50%
+				background #fff
+				width 60px
+				margin 5px
+				height 60px
+				padding 10px 5px
+				z-index 99999
+				&:hover								
+					animation(spin 1s ease-in-out)
+				a												
+					img
+						display block
+						margin 0 auto
+						width 40px
+		.atras
+			position absolute				
+			width 100px								
+			left 0
+			padding 5px				
+			border 0
+			top -30px				
+			background #34AFD3	
+			a
+				color #fff
+				text-decoration none
+			&:hover
+				background crimson	
+
+.technologies	
+	ul
+		list-style none
+		li 
+			display inline-block
+			margin 5px
+			figure
+				padding 10px
+				background #f5f5f5
+				color #333
+				img
+					width 120px
+					height 100px
+
+@keyframes spin 
+	50% 		
+		transform(scale(1.2) rotate(360deg))
+@keyframes brazuca 
+	100% 		
+		left 0
+		transform(rotate(360deg))
+	50%				
+		left 70%
+	
