@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Describiendo un carro con Javascript POO</title>
+</head>
+<body>
+	<script>
+		function Carro (color, brand, type) {
+			this.fuel = 100
+			this.color = color
+			this.brand = brand
+			this.type = type	
+			this.turnOn = function () {	
+				this.fuel -= 20				
+				return 'El carro ' + this.brand + ' de color ' + this.color + ' ha encendido (-10 combustible)! <br>'
+			}
+			this.turnOff = function () {
+				return 'Carro tipo ' + this.type + ' se ha apagado! <br>'
+			}
+			this.describeCar = function () {
+				return 'El carro es un ' + this.brand + ' de color ' + this.color + ' tipo ' + this.type + ' <br>'
+			}
+			this.driveInKm = function(km) {
+				this.fuel -= km	
+				return 'El carro ha hecho un recorrido de ' + km + ' kilometros! <br>'			
+			}
+		}
+
+		Carro.prototype.giveFuel = function() {				
+			let full = 100 - this.fuel		
+			this.fuel += full	
+			return 'El carro se ha tanqueado con '+full+' y ahora tiene '+this.fuel+' (Full) <br>'
+		}
+
+		Carro.prototype.showFuel = function() {			
+			return 'El carro tiene ' + this.fuel + ' de combustible! <br>'
+		}
+
+		var Carro1 = new Carro('Rojo', 'KIA', 'Camioneta')
+		document.write(Carro1.turnOn())
+		document.write(Carro1.describeCar())
+		document.write(Carro1.giveFuel())
+		document.write(Carro1.driveInKm(50))
+		document.write(Carro1.showFuel())
+		document.write(Carro1.turnOff())
+	</script>
+</body>
+</html>
